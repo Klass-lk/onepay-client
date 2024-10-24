@@ -191,7 +191,7 @@ const OnepayPaymentRequest = () => {
                 placeholder="Request Body"
                 value={requestBody}
                 onChange={(e) => setRequestBody(e.target.value)}
-                className="min-h-[200px] font-mono"
+                className="min-h-[400px] font-mono"
               />
             </TabsContent>
             <TabsContent value="response">
@@ -199,7 +199,7 @@ const OnepayPaymentRequest = () => {
                 placeholder="Response will appear here"
                 value={response}
                 readOnly
-                className="min-h-[200px] font-mono"
+                className="min-h-[400px] font-mono"
               />
             </TabsContent>
           </Tabs>

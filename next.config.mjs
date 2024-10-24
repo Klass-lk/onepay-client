@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  basePath: "/onepay-client",
+  output: "export",
+  reactStrictMode: false,
+};
 
 export default nextConfig;
