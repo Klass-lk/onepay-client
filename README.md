@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OnePay Client
 
-## Getting Started
+[![GitHub Pages Deployment](https://github.com/klass-lk/onepay-client/actions/workflows/nextjs.yml/badge.svg)](https://github.com/klass-lk/onepay-client/actions/workflows/deploy.yml)
 
-First, run the development server:
+This repository contains the source code for a website that simplifies the process of requesting and validating payment links using the [OnePay.lk](https://www.onepay.lk/) payment API.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The website is available at: [https://klass-lk.github.io/onepay-client](https://klass-lk.github.io/onepay-client).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **SHA256 Hash Validation**: Validate the SHA256 hash required to send with API requests to OnePay.
+- **Request Payment Link**: Send payment link requests directly via the website and view the API response.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Website Usage
 
-## Learn More
+1. **SHA256 Hash Validation**:
+    - Input the necessary parameters for the OnePay API request.
+    - The website generates and validates the SHA256 hash to ensure accuracy.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Send Payment Request**:
+    - Use the website to submit payment link requests to the OnePay API.
+    - View the response directly in the interface.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- NextJS
+- GitHub Pages for deployment
 
-## Deploy on Vercel
+## How to Contribute
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please fork this repository, make your changes, and submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Development
+
+To get started with local development:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/klass-lk/onepay-client.git
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Run the development server:
+    ```bash
+    npm start
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+### Deployment
+
+This project is deployed using GitHub Pages. The deployment workflow is handled automatically via GitHub Actions.
+
+---
+
+**Website**: [https://klass-lk.github.io/onepay-client](https://klass-lk.github.io/onepay-client)  
+**OnePay API**: [https://www.onepay.lk/](https://www.onepay.lk/)
+
