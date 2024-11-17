@@ -57,6 +57,7 @@ const OnepayPaymentRequest = () => {
   const generateHash = async (data: typeof initialFormData, salt: string) => {
     const jsonString = JSON.stringify(data).replace(/\s/g, '')
     const stringToHash = jsonString + salt
+    console.log(stringToHash)
     const encoder = new TextEncoder()
     const data_encoded = encoder.encode(stringToHash)
     const hashBuffer = await crypto.subtle.digest('SHA-256', data_encoded)
